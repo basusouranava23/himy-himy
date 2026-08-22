@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FPS Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-4">FPS Calculator</h1>
+    <div class="space-y-4">
+      <div>
+        <label for="fpsInput" class="block text-sm font-medium text-gray-700">Frames Per Second (FPS)</label>
+        <input
+          type="number"
+          id="fpsInput"
+          placeholder="e.g., 60"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label for="frameTimeInput" class="block text-sm font-medium text-gray-700">Frame Time (ms)</label>
+        <input
+          type="number"
+          id="frameTimeInput"
+          placeholder="e.g., 16.67"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+        />
+      </div>
+    </div>
+    <p class="mt-4 text-center text-gray-600" id="note">Enter a value in either field to see the conversion.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
